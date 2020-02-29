@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    max-width: 100vw;
+    height: 100vh;
+}
+.navbar{
+    background-color: #3b404d;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    padding: 12px;
+    margin: 10px;
+    border: solid .5px #bfc0c2;
+}
+.nav-item:hover{
+    background-color: #4b515f;
+    cursor: pointer;
+}
+.nav-text{
+    color: #bfc0c2;
+}
+.header{
+    background-image:url("./images/Forest2.png");
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-text{
+    color: #f8f8f8;
+    font-size: 64px;
+    color: white;
+    text-shadow: -1px -1px 0 #2e2e2e, 2px -2px 0 #2e2e2e, -2px 2px 0 #2e2e2e, 2px 2px 0 #2e2e2e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sub-text{
+    color: #e1e0df;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    max-width: 100vw;
+    padding: 40px;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    width: 30%;
+    background-color: #f1f1f1;
+}
+.card-img{
+    width: 100%;
+    height: 150px;
+}
+.inner-card{
+    padding: 15px;
+}
+.card-header{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.green{
+    color:#3b944c;
+}
+.blue{
+    color:#2789be;
+}
+.red{
+    color: #676767;
+}
+.card-text{
+    font-size: 14px;
+    color:#636363;
+}
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card-button{
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.card-button:hover{
+    cursor: pointer;
+}
+.green-button{
+    background-color:#3b944c;
+}
+.blue-button{
+    background-color:#2789be;
+}
+.red-button{
+    background-color:#832916;
+}
+.bigger-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bigger-card{
+    margin-top: 40px;
+    width: 49%;
+    background-color: #f1f1f1;
+}
+.bigger-card-img{
+    width: 100%;
+    height: 300px;
+}
+.bigger-card-header{
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+}
+.bigger-button-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bigger-button{
+    background-color: white;
+    color:#a4a4a4;
+    border: solid 1px#a4a4a4
+}
+
+@media only screen and (max-width: 750px) {
+    .container {
+     padding: 20px 5px 20px 5px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .container {
+        padding: 20px 20px 20px 20px;
+       }
+    .card-container {
+     flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .bigger-card-container{
+     flex-direction: column;
+    }
+    .bigger-card{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+  }
